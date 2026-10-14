@@ -10,9 +10,9 @@ export function kg(n: number): string {
   return `${nf.format(n)} kg`;
 }
 
-/** 12.400 kg → "12,4 t" para que las cifras grandes no ocupen media pantalla. */
+/** 9612,5 kg → "9,6 t": a partir de una tonelada, para que las cifras quepan en el móvil. */
 export function volume(n: number): string {
-  return n >= 10000 ? `${nf.format(n / 1000)} t` : kg(n);
+  return n >= 1000 ? `${nf.format(n / 1000)} t` : kg(n);
 }
 
 export const dayLabel = (iso: string | Date) => dayFmt.format(new Date(iso)).replace('.', '');
