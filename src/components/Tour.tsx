@@ -47,7 +47,7 @@ const STEPS: Step[] = [
   },
   {
     title: 'Todo listo',
-    text: 'Al principio verás seis semanas de entrenos de ejemplo para que lo veas todo con datos. Puedes borrarlos o volver a cargarlos desde Inicio. Si quieres volver a verme, pulsa el botón «?» de arriba.',
+    text: 'Al principio verás seis semanas de entrenos de ejemplo para que lo veas todo con datos. Cuando empieces con los tuyos, bórralos desde Inicio. Si quieres volver a verme, pulsa el botón «?» de arriba.',
   },
 ];
 

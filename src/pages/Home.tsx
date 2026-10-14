@@ -65,13 +65,10 @@ export function Home() {
         </div>
       )}
 
-      {!hasSampleData(state) && (
+      {/* Solo mientras no hay ningún entreno: cuando empiezas a usarla con tus datos, el aviso desaparece. */}
+      {!hasSampleData(state) && state.workouts.length === 0 && (
         <div className="notice" role="note">
-          <p>
-            {state.workouts.length
-              ? 'Puedes añadir datos de ejemplo para ver cómo quedan las gráficas con más semanas. Tus entrenos no se tocan.'
-              : 'Aún no tienes entrenos. Empieza uno o carga el ejemplo para ver cómo quedan las gráficas y el historial.'}
-          </p>
+          <p>Aún no tienes entrenos. Empieza uno o carga el ejemplo para ver cómo quedan las gráficas y el historial.</p>
           <button type="button" className="btn sm ghost" onClick={() => dispatch({ type: 'loadSampleData', now: new Date() })}>
             Cargar ejemplo
           </button>
