@@ -2,10 +2,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// `base` es el nombre del repositorio: la app se publica en https://rubenj0806.github.io/reps/
+// Rutas relativas: la app funciona en https://rubenj0806.github.io/Reps/ o en cualquier otra carpeta.
 export default defineConfig({
   plugins: [react()],
-  base: '/reps/',
+  base: './',
   test: {
     environment: 'node',
   },

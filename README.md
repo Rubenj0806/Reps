@@ -2,7 +2,7 @@
 
 Aplicación web para registrar entrenamientos de gimnasio: creas tus rutinas, apuntas cada serie mientras entrenas, descansas con un temporizador y ves cómo evolucionan tus marcas con gráficas.
 
-**👉 Pruébala: [rubenj0806.github.io/reps](https://rubenj0806.github.io/reps/)**
+**👉 Pruébala: [rubenj0806.github.io/Reps](https://rubenj0806.github.io/Reps/)**
 
 La primera vez se carga con seis semanas de datos de ejemplo para que se vea cómo funciona. Se pueden borrar con un botón y empezar desde cero.
 
